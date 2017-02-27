@@ -1,0 +1,50 @@
+
+
+{
+  "videoPath": "video/",
+  "docPAth":"docs/",
+  "markers":
+  [
+    {
+      "id":"healthCenter",
+      "type":"list",
+      "xPos":"1824",
+      "yPos":"900",
+      "title":"Behavioral Health Center",
+      "items":[
+        {
+          "name": "Health Center Brochure",
+          "type": "document",
+            "url": "Harbor_City_Behavioral_Health_Center_Brochure.pdf"
+        },
+        {
+          "name": "Organizational Chart",
+          "type": "link",
+          "iframe":"true",
+          "url": "org_chart.html"
+        },
+        {
+          "name": "Corporate Policy",
+          "type": "document",
+                    "url": "Harbor_City_Behavioral_Health_Center_corporate_policy.pdf"
+        },
+        {
+          "name": "Summary Report",
+          "type": "document",
+          "url": "Harbor_City_Behavioral_Health_Center_anual_report.pdf"
+        },
+        {
+          "name": "Directors Memo",
+          "type": "document",
+          "url": "Harbor_City_Behavioral_Health_Center_directors_memo.pdf"
+        },
+        {
+          "name": "Strategic Plan Template",
+          "type": "document",
+          "url": "Harbor_City_Behavioral_Health_Center_strategic_plan.pdf"
+        }
+
+      ]
+    }
+  ]
+}
