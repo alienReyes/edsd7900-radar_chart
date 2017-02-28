@@ -6066,132 +6066,38 @@ html {
   fill: #333333;
 }
 
-.org-chart-cont {
-  display: inline-block;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-color: #183F63;
-}
-.org-chart-cont img {
-  position: absolute;
-  width: 100px;
-  opacity: .8;
-  height: auto;
-  bottom: 35px;
-  left: 15px;
-  z-index: 5000;
-}
-.org-chart-cont .btn {
-  position: absolute;
-  bottom: 15px;
-  left: 50%;
-  z-index: 5000;
-}
-
-.modal {
-  z-index: 15000;
-}
-
-.orgChart {
-  background-color: #183F63;
-}
-
-.jobRole, .director {
-  cursor: pointer;
-}
-.jobRole text, .director text {
-  fill: white;
-}
-
-.sideMenu {
-  list-style: none;
-}
-
-.menuItem {
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
   font-weight: 300;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  cursor: pointer;
-}
-
-.selected {
-  color: #E64030;
-}
-
-.orgchart-text {
-  margin-top: 0px;
-  padding-bottom: 25px;
-  display: none;
-  width: 100%;
-  height: 100%;
-}
-
-.figure-img {
-  float: right !important;
-}
-
-.modal-body figure {
-  float: left;
-}
-.modal-body figure figcaption {
-  float: left;
-}
-.modal-body figure figcaption h4 {
-  font-size: 1.2 rem;
-  font-weight: bold;
-}
-.modal-body figure figcaption h5 {
-  font-size: 1.2rem;
-}
-.modal-body h1 {
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 2rem;
+  fill: #242424;
   text-align: center;
-  color: #E64030;
-  margin-bottom: 1.5rem;
-  margin-top: 1.5rem;
-}
-.modal-body h2 {
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 1.5rem;
-  text-align: left;
-  margin-bottom: 1.5rem;
-  margin-top: 1.5rem;
-}
-.modal-body h3 {
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 1.2rem;
-  text-align: left;
-  font-weight: 300;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+  cursor: default;
 }
 
-.text-body {
-  display: none;
-  overflow-y: scroll !important;
+.legend {
+  font-family: 'Raleway', sans-serif;
+  fill: #333333;
 }
 
-.departmentTitle {
-  cursor: pointer;
+.tooltip {
+  fill: #333333;
 }
 
-.shadow {
-  -webkit-filter: drop-shadow(-5px -5px 5px #000);
-  filter: drop-shadow(-5px -5px 5px #000);
-  /* Same syntax as box-shadow, except
-  for the spread property */
-}
-
-.close {
-  /* float: right; */
-  font-size: 3.5rem;
-  font-weight: bold;
-  line-height: 1;
-  color: #c9302c;
-  text-shadow: 0 1px 0 #fff;
-  opacity: 1.2;
+.controls {
+  width: 300px;
+  height: 680px;
   position: absolute;
-  right: 15px;
-  top: -9px;
-  z-index: 8000;
+  top: 0;
+  left: 0;
+  z-index: 5000;
+  background: #475B62;
+  padding-top: 15px;
+}
+.controls .label {
+  font-size: 1.2rem;
+  text-shadow: none;
+  color: white;
 }

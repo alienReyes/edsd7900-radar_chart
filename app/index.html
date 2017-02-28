@@ -1,43 +1,75 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/ >
 		<title>Smoothed D3.js Radar Chart</title>
 
-		<!-- Google fonts -->
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-
-		<!-- D3.js -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
-
-		<style>
-			body {
-				font-family: 'Open Sans', sans-serif;
-				font-size: 11px;
-				font-weight: 300;
-				fill: #242424;
-				text-align: center;
-				text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
-				cursor: default;
-			}
-
-			.legend {
-				font-family: 'Raleway', sans-serif;
-				fill: #333333;
-			}
-
-			.tooltip {
-				fill: #333333;
-			}
-		</style>
+		<!--build:css css/style.min.css-->
+ <!-- bower:css -->
+ <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
+ <!-- endbower -->
+ <link rel="stylesheet" href="css/jqueryui.css">
+<link rel="stylesheet" href="css/style.css">
+ <!--endbuild-->
 
 	</head>
 	<body>
+<div class="container">
+	<div class="row">
+		<div class="col-md-3 hidden-print ">
+			<div class="label">Scholarship</div>
+			<div id="s1"  class="slider"style="width:260px; margin:15px;"></div>
+			<div class="label">Systemic Thinking</div>
+			<div id="s2"  class="slider"style="width:260px; margin:15px;"></div>
+			<div class="label">Reflection</div>
+			<div id="s3"  class="slider"style="width:260px; margin:15px;"></div>
+			<div class="label">Practice</div>
+			<div id="s4"  class="slider"style="width:260px; margin:15px;"></div>
+			<div class="label">Collaboration</div>
+			<div id="s5"  class="slider"style="width:260px; margin:15px;"></div>
+			<div class="label">Advocacy</div>
+			<div id="s6"  class="slider"style="width:260px; margin:15px;"></div>
+			<div class="label">Civic Engagement</div>
+			<div id="s7"  class="slider"style="width:260px; margin:15px;"></div>
+			<div class="label">Humane Ethics</div>
+			<div id="s8"  class="slider"style="width:260px; margin:15px;"></div>
 
-		<div class="radarChart"></div>
+		</div>
+		<div class="col-md-9 ">
+			<div class="radarChart"></div>
+		</div>
 
-		<script src="js/radar.js"></script>
-		<script src="js/main.js"></script>
+	</div>
+</div>
+
+
+<!-- <div class="controls">
+
+
+</div> -->
+
+ 
+
+
+		<!--build:js js/main.min.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+
+<script
+  src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+
+<script src="bower_components/tether/dist/js/tether.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/mustache.js/mustache.js"></script>
+<script src="bower_components/d3/d3.js"></script>
+<!-- endbower -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+
+<script src="js/radar.js"></script>
+<script src="js/main.js"></script>
+<!-- endbuild -->
+
+
+
 	</body>
 </html>
