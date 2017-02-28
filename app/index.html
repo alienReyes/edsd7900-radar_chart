@@ -1,103 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/ >
+		<title>Smoothed D3.js Radar Chart</title>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Harbor City</title>
+		<!-- Google fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 
-  <!--build:css css/style.min.css-->
-  <!-- bower:css -->
-  <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css" />
-  <!-- endbower -->
-<link rel="stylesheet" href="css/style.css">
-  <!--endbuild-->
+		<!-- D3.js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
 
+		<style>
+			body {
+				font-family: 'Open Sans', sans-serif;
+				font-size: 11px;
+				font-weight: 300;
+				fill: #242424;
+				text-align: center;
+				text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+				cursor: default;
+			}
 
-</head>
+			.legend {
+				font-family: 'Raleway', sans-serif;
+				fill: #333333;
+			}
 
-<body>
+			.tooltip {
+				fill: #333333;
+			}
+		</style>
 
-  <div id="map">
-  </div>
-  <div class="main-title">
-    <h1>Harbor City</h1>
-  </div>
+	</head>
+	<body>
 
-<button type="button" class="btn btn-danger closeBtn">Close</button>
+		<div class="radarChart"></div>
 
-
-
-
-<aside class="pannel-side pannel-side__closed">
-  <div id="accordion" role="tablist" aria-multiselectable="true">
-</div>
-  </aside>
-
-  <iframe  class="extContainer" src="" frameborder="0"></iframe>
-
-
-
-   <!-- /container -->
-
-
-
-    <!--build:js js/main.min.js -->
-    <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/tether/dist/js/tether.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="bower_components/mustache.js/mustache.js"></script>
-    <script src="bower_components/jquery.easing/js/jquery.easing.js"></script>
-    <script src="bower_components/leaflet/dist/leaflet-src.js"></script>
-    <!-- endbower -->
-    <script src="js/svg4everybody.js"></script>
-
-    <script src="js/main.js"></script>
-    <!-- endbuild -->
-
-
-    <script>   svg4everybody();</script>
-
-        <script id="templatePanel" type="text/template">
-            {{#markers}}
-            <div class="card">
-              <div class="card-header" role="tab" id="headingOne">
-                <h5 class="mb-0">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#{{id}}" aria-expanded="true" aria-controls="{{id}}" data-xpos="{{xPos}}" data-id="{{id}}" data-ypos="{{yPos}}">
-                    {{title}}
-                  </a>
-                </h5>
-              </div>
-
-              <div id="{{id}}" class="collapse" role="tabpanel" aria-labelledby="headingOne">
-                <div class="card-block">
-              <ul class="items--list">
-                {{#items}}
-                      <li class="item" data-type="{{type}}" data-url={{url}} data-iframe="{{iframe}}">
-                         <svg role="img" title="{{itemImage}}">
-    <use class="iconCont" xlink:href="images/icons.svg#{{type}}"/>
-</svg>  <p>{{name}}</p></li>
-                {{/items}}
-              </ul>
-                </div>
-              </div>
-            </div>
-            {{/markers}}
-        </script>
-
-
-
-
-
-    </body>
-
-
-
-
-
-
-
-
-
-
+		<script src="js/radar.js"></script>
+		<script src="js/main.js"></script>
+	</body>
 </html>
